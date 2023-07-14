@@ -1,0 +1,21 @@
+@import 'padroes';
+
+.page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: $corFundo;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .modal {
+        width: 927px;
+        height: 641px;
+        background-color: white;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        padding: 20px;
+    }
+}
