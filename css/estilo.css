@@ -9,6 +9,9 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto";
+  list-style: none;
+  box-sizing: border-box;
+  outline: 0;
 }
 
 .page {
@@ -29,4 +32,125 @@
   display: grid;
   grid-template-columns: 1fr 400px;
   padding: 20px;
+}
+
+.page .modal .modal-texto {
+  padding: 60px;
+  color: #150c37;
+}
+
+.page .modal .modal-texto .checklist {
+  margin: 35px 0px;
+}
+
+.page .modal .modal-texto .checklist .lista {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.page .modal .modal-texto .checklist .lista img {
+  margin-right: 15px;
+}
+
+.page .modal .modal-texto .label {
+  display: block;
+}
+
+.page .modal .modal-texto .label .legendas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page .modal .modal-texto .label .legendas .legenda {
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.page .modal .modal-texto .label .legendas .legenda-erro {
+  color: #ff5417;
+  display: none;
+}
+
+.page .modal .modal-texto .label .input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 15px 25px;
+  margin-bottom: 30px;
+}
+
+.page .modal .modal-texto .label .input::placeholder {
+  color: #9d9da2;
+  font-size: 15px;
+}
+
+.page .modal .modal-texto .label .input:focus {
+  outline: 1px solid #150c37;
+}
+
+.page .modal .modal-texto .label.erro .input {
+  background-color: rgba(255, 84, 23, 0.2);
+  border: solid 1px #ff5417;
+}
+
+.page .modal .modal-texto .label.erro .input::placeholder {
+  color: #ff5417;
+}
+
+.page .modal .modal-texto .label.erro .legenda-erro {
+  display: block;
+}
+
+.page .modal .modal-sucesso {
+  display: none;
+  padding: 50px;
+}
+
+.page .modal .modal-sucesso .img, .page .modal .modal-sucesso .texto {
+  margin-bottom: 30px;
+}
+
+.page .modal .modal-sucesso span {
+  font-weight: bold;
+}
+
+.page .modal.sucesso {
+  display: block;
+  width: 505px;
+  height: 525px;
+}
+
+.page .modal.sucesso .modal-texto, .page .modal.sucesso .modal-img {
+  display: none;
+}
+
+.page .modal.sucesso .modal-sucesso {
+  display: block;
+}
+
+.titulo {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #150c37;
+}
+
+.texto {
+  font-family: 'Roboto-Regular' !important;
+  color: #150c37;
+}
+
+.button {
+  border-radius: 5px;
+  border: 0px;
+  background-color: #150c37;
+  height: 50px;
+  color: white;
+  width: 100%;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-image: linear-gradient(90deg, #ff006b, #ff5417);
+  cursor: pointer;
+  box-shadow: 0px 20px 20px 0px rgba(255, 84, 23, 0.3);
 }

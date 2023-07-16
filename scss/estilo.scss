@@ -17,5 +17,136 @@
         display: grid;
         grid-template-columns: 1fr 400px;
         padding: 20px;
+
+        .modal-texto {
+            padding: 60px;
+            color: $azulEscuro;
+
+            .checklist {
+                margin: 35px 0px;
+                
+                .lista {
+                    display: flex;
+                    margin-bottom: 15px;
+
+                    img {
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+            .label {
+                display: block;
+
+                .legendas {
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .legenda {
+                        font-size: 12px;
+                        margin-bottom: 7px;
+                    }
+
+                    .legenda-erro {
+                        color: $laranja;
+                        display: none;
+                    }
+                }
+
+                .input {
+                    width: 100%;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                    padding: 15px 25px;
+                    margin-bottom: 30px;
+
+                    &::placeholder {
+                        color: $cinza;
+                        font-size: 15px;
+                    }
+
+                    &:focus {
+
+                        outline: 1px solid $azulEscuro;
+                    }
+                 
+                }
+
+                &.erro {
+                    .input {
+                        background-color: rgba(255, 84, 23, .2);
+                        border: solid 1px $laranja;
+
+                        &::placeholder {
+                            color: $laranja;
+                        }
+                    }
+
+                    .legenda-erro {
+                        display: block;
+                    }
+                }
+                
+            }
+
+        }
+
+        .modal-sucesso {
+            display: none;
+            padding: 50px;
+
+            .img, .texto {
+                margin-bottom: 30px;
+            }
+
+            span {
+                font-weight: bold;
+            }
+
+        }
+
+        &.sucesso {
+            .modal-texto, .modal-img {
+                display: none;
+            }
+
+            .modal-sucesso {
+                display: block;
+                
+            }
+
+            display: block;
+            width: 505px;
+            height: 525px;
+
+        }
     }
 }
+
+.titulo {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: $azulEscuro;
+}
+
+.texto {
+    font-family: 'Roboto-Regular' !important;
+    color: $azulEscuro;
+}
+
+.button {
+    border-radius: 5px;
+    border: 0px;
+    background-color: $azulEscuro;
+    height: 50px;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+
+    &:hover {
+        background-image: linear-gradient(90deg, $rosa, $laranja);
+        cursor: pointer;
+        box-shadow: 0px 20px 20px 0px rgba(255, 84, 23, .3);
+    }
+}
+
