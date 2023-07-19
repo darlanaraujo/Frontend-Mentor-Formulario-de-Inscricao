@@ -18,7 +18,7 @@
 </head>
 <body>
     <section class="page">
-        <section class="modal sucesso"> <!-- sucesso -->
+        <section class="modal " id="modal"> <!-- sucesso -->
             <div class="modal-img-mobile">
                 <img src="./img/illustration-sign-up-mobile.svg" alt="">
             </div>
@@ -42,7 +42,7 @@
                     </li>
                 </ul>
 
-                <label class="label " for="email"> <!-- erro -->
+                <label class="label " for="email" id="label"> <!-- erro -->
                     <div class="legendas">
                         <legend class="legenda">Email address</legend>
                         <legend class="legenda legenda-erro">Valid email required</legend>
@@ -50,7 +50,7 @@
                     <input class="input" type="email" name="email" id="inputEmail" placeholder="email@company.com" maxlength="50" required>
                 </label>
 
-                <button class="button" type="button">Subscribe to monthly newsletter</button>
+                <button class="button" type="button" id="btnEnviar">Subscribe to monthly newsletter</button>
             </div>
 
             <div class="modal-img">
@@ -63,7 +63,7 @@
                     <h1 class="titulo">Thanks for subscribing!</h1>
                     <p class="texto">A confirmation email has been sent to <span>ash@loremcompany.com</span>. Please open it and click the button inside to confirm upur subscription.</p>
                 </div>
-                <button class="button">Dismiss message</button>
+                <button class="button" id="btnVoltar">Dismiss message</button>
             </div>
         </section>
     </section>
